@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Physics Practicals | O & A Level Practical Paper Practice</title>
+    <meta name="description" content="Free exam-style physics practicals for O Level, IGCSE and A Level (5054, 0625, 9702): take readings, record a results table, plot the graph, find the gradient and evaluate, marked the way Cambridge marks it." />
+    <meta name="theme-color" content="#eef3fa" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        var q = /[?&]theme=(night|blueprint)/.exec(location.search);
+        if ((q ? q[1] : localStorage.getItem('theme')) === 'night') document.documentElement.dataset.theme = 'night';
+        document.documentElement.dataset.level = localStorage.getItem('pr-level') === 'A' ? 'A' : 'O';
+      } catch (e) {}
+    </script>
+    <style>
+      html { background: #eef3fa; color: #13294b; }
+      html[data-theme='night'] { background: #0b1a33; color: #e7eefb; }
+    </style>
+    <script type="module" crossorigin src="./assets/practicals-BtuZLh_8.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/shared-D548Vmmj.js">
+    <link rel="modulepreload" crossorigin href="./assets/header-vVzqOU5O.js">
+    <link rel="stylesheet" crossorigin href="./assets/practicals-CPnb5XvN.css">
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="mark" viewBox="0 0 64 64">
+        <path d="M3 3h46l12 12v46H15L3 49z" fill="#13294b" stroke="#ffffff" stroke-width="2.5" />
+        <path d="M18 14h28" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" />
+        <path d="M21 14l-3-4M27 14l-3-4M33 14l-3-4M39 14l-3-4M45 14l-3-4" stroke="#9fb6da" stroke-width="1.4" stroke-linecap="round" />
+        <path d="M32 14l9 27" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+        <path d="M32 14v31" stroke="#9fb6da" stroke-width="1.3" stroke-dasharray="2 3" />
+        <path d="M17.5 41.5a30 30 0 0 0 29 0" fill="none" stroke="#9fb6da" stroke-width="1.4" stroke-dasharray="2 3" />
+        <circle cx="42" cy="44" r="6" fill="#e0362c" stroke="#ffffff" stroke-width="2" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
+    </svg>
+
+    <div class="bg-fx" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <div class="nav-bar glass">
+        <a href="./" class="brand" aria-label="Back to home">
+          <svg class="logo-mk"><use href="#mark" /></svg>
+          <span class="brand-name">Physics Practicals<small data-cfg="teacher.brand"></small></span>
+        </a>
+        <nav class="nav-links pr-tabs" aria-label="Practicals">
+          <a href="#pendulum" data-exp="pendulum"><i class="mono">01</i>Pendulum</a>
+          <a href="#spring" data-exp="spring"><i class="mono">02</i>Hooke's law</a>
+          <a href="#refraction" data-exp="refraction"><i class="mono">03</i>Refraction</a>
+          <a href="#iv" data-exp="iv"><i class="mono">04</i>I–V</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="tgl" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Night blueprint theme">
+            <i class="st s1"></i><i class="st s2"></i><i class="st s3"></i><i class="st s4"></i>
+            <span class="tgl-knob">
+              <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z" /></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" /><path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5.1 5.1l1.7 1.7M17.2 17.2l1.7 1.7M5.1 18.9l1.7-1.7M17.2 6.8l1.7-1.7" /></svg>
+            </span>
+          </button>
+          <a class="btn btn-primary btn-sm nav-join" href="./">Home</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu"><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="menu-panel glass" id="menuPanel" hidden>
+        <nav aria-label="Practicals (mobile)">
+          <a href="#pendulum">01 Simple pendulum <svg><use href="#i-arrow" /></svg></a>
+          <a href="#spring">02 Hooke's law <svg><use href="#i-arrow" /></svg></a>
+          <a href="#refraction">03 Refraction <svg><use href="#i-arrow" /></svg></a>
+          <a href="#iv">04 I–V characteristic <svg><use href="#i-arrow" /></svg></a>
+        </nav>
+        <div class="menu-actions">
+          <a class="ma-lab" href="./">Back to the home page</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pr-main" id="top">
+      <section class="pr-hero wrap">
+        <span class="eyebrow" id="prEyebrow">Physics Practicals</span>
+        <h1 id="prTitle">Physics Practicals</h1>
+        <p id="prAim"></p>
+        <div class="pr-opts">
+          <div class="seg" id="levelSeg" role="group" aria-label="Level">
+            <button type="button" data-level="O">O Level / IGCSE</button>
+            <button type="button" data-level="A">A Level (9702)</button>
+          </div>
+          <button class="btn btn-sm" type="button" id="resetBtn">Start again with new apparatus</button>
+        </div>
+        <p class="pr-level-note mono" id="levelNote"></p>
+      </section>
+
+      <div class="pr-layout wrap">
+        <div class="pr-steps" id="practical"></div>
+        <aside class="pr-marks card" id="marks" aria-live="polite" aria-label="Mark scheme"></aside>
+      </div>
+    </main>
+
+    <footer class="pr-foot wrap mono">
+      <a href="./">← Home</a>
+      <span>Simulated readings include real instrument error, so every run is different.</span>
+    </footer>
+
+  </body>
+</html>
