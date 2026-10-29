@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Physics Venture by Rehan Zaidi | O & A Level Physics, Karachi</title>
+    <meta name="description" content="Physics Venture by Sir Rehan Zaidi (MSc Applied Physics, University of Karachi): O & A Level Physics (5054, 0625, 9702) classes in Karachi with 12+ years of teaching, free exam-style practicals, physics tools and past papers. Exploring the world of physics, one concept at a time." />
+    <meta name="theme-color" content="#eef3fa" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <script>
+      document.documentElement.classList.remove('no-js');
+      // hide the hero until its intro animation starts (fallback: show after 2.5 s)
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('intro');
+        setTimeout(function () { document.documentElement.classList.remove('intro'); }, 2500);
+      }
+      try {
+        var q = /[?&]theme=(night|blueprint)/.exec(location.search);
+        if ((q ? q[1] : localStorage.getItem('theme')) === 'night') document.documentElement.dataset.theme = 'night';
+      } catch (e) {}
+    </script>
+    <style>
+      html { background: #eef3fa; color: #13294b; }
+      html[data-theme='night'] { background: #0b1a33; color: #e7eefb; }
+      html.intro [data-hero], html.intro .hero-title span { opacity: 0; }
+    </style>
+    <script type="module" crossorigin src="./assets/main-CTV2FgSC.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/shared-D548Vmmj.js">
+    <link rel="modulepreload" crossorigin href="./assets/header-vVzqOU5O.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-v0RJwCN3.css">
+  </head>
+  <body>
+    <!-- SVG sprite: logo mark + icons -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="mark" viewBox="0 0 64 64">
+        <path d="M3 3h46l12 12v46H15L3 49z" fill="#13294b" stroke="#ffffff" stroke-width="2.5" />
+        <!-- pendulum: support, string, bob and its swing arc -->
+        <path d="M18 14h28" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" />
+        <path d="M21 14l-3-4M27 14l-3-4M33 14l-3-4M39 14l-3-4M45 14l-3-4" stroke="#9fb6da" stroke-width="1.4" stroke-linecap="round" />
+        <path d="M32 14l9 27" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+        <path d="M32 14v31" stroke="#9fb6da" stroke-width="1.3" stroke-dasharray="2 3" />
+        <path d="M17.5 41.5a30 30 0 0 0 29 0" fill="none" stroke="#9fb6da" stroke-width="1.4" stroke-dasharray="2 3" />
+        <circle cx="42" cy="44" r="6" fill="#e0362c" stroke="#ffffff" stroke-width="2" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" /></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /></g><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" /></symbol>
+      <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z" /></symbol>
+    </svg>
+
+    <div class="bg-fx" aria-hidden="true"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="nav" id="nav">
+      <div class="nav-bar glass">
+        <a href="#top" class="brand" aria-label="Home">
+          <svg class="logo-mk"><use href="#mark" /></svg>
+          <span class="brand-name"><span data-cfg="teacher.shortName"></span><small data-cfg="teacher.brand"></small></span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#practicals">Practicals</a>
+          <a href="#tools">Tools</a>
+          <a href="#vault">Paper Vault</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="tgl" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Night blueprint theme">
+            <i class="st s1"></i><i class="st s2"></i><i class="st s3"></i><i class="st s4"></i>
+            <span class="tgl-knob">
+              <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z" /></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" /><path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5.1 5.1l1.7 1.7M17.2 17.2l1.7 1.7M5.1 18.9l1.7-1.7M17.2 6.8l1.7-1.7" /></svg>
+            </span>
+          </button>
+          <a class="btn btn-primary btn-sm nav-join" href="join.html">Join a class</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu"><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="menu-panel glass" id="menuPanel" hidden>
+        <nav aria-label="Mobile">
+          <a href="#about">About <svg><use href="#i-arrow" /></svg></a>
+          <a href="#courses">Courses <svg><use href="#i-arrow" /></svg></a>
+          <a href="practicals.html">Physics Practicals <svg><use href="#i-arrow" /></svg></a>
+          <a href="#tools">Physics Tools <svg><use href="#i-arrow" /></svg></a>
+          <a href="#vault">Paper Vault <svg><use href="#i-arrow" /></svg></a>
+          <a href="#contact">Contact <svg><use href="#i-arrow" /></svg></a>
+        </nav>
+        <div class="menu-actions">
+          <a class="ma-wa" data-href="wa" target="_blank" rel="noopener"><svg><use href="#i-wa" /></svg>WhatsApp</a>
+          <a class="ma-call" data-href="tel"><svg><use href="#i-phone" /></svg>Call <span data-cfg="contact.whatsappDisplay"></span></a>
+          <a class="ma-lab" href="practicals.html">Open the Physics Practicals</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <canvas id="hero3d" aria-hidden="true"></canvas>
+        <div class="wrap hero-inner">
+          <span class="chip hero-chip" data-hero><i class="dia"></i><span data-cfg="teacher.tagline"></span> · <span data-cfg="teacher.city"></span></span>
+          <h1 class="hero-title" data-hero>
+            <span class="l1">Physics, from</span>
+            <span class="l2">first principles.</span>
+          </h1>
+          <p class="hero-sub" data-hero>
+            <span data-cfg="teacher.name"></span> builds every topic from forces, fields and energy up to the exam answer, and gets you through the practical paper by doing it: readings, tables, graphs, gradients and uncertainties.
+          </p>
+          <div class="hero-ctas" data-hero>
+            <a class="btn btn-primary" href="join.html">Join a class <span class="arr"><svg width="18" height="18"><use href="#i-arrow" /></svg></span></a>
+            <a class="btn" href="practicals.html">Try a practical <span class="arr"><svg width="18" height="18"><use href="#i-arrow" /></svg></span></a>
+          </div>
+          <div class="hero-codes mono" data-hero id="heroCodes"></div>
+          <div class="eq-card glass" data-hero>
+            <div class="eq-top mono"><span>Equation of the moment</span><span class="eq-idx" id="eqIdx">01 / 10</span></div>
+            <div class="eq-line mono" id="eqLine" aria-live="polite"></div>
+            <div class="eq-topic" id="eqTopic"></div>
+            <div class="eq-prog"><i id="eqProg"></i></div>
+          </div>
+          <div class="hero-hint mono" data-hero><i class="dia"></i>Move your cursor across the bob to push the pendulum.<span class="scroll-cue">Scroll</span></div>
+        </div>
+      </section>
+
+      <!-- ============ MEASURING TAPE ============ -->
+      <div class="tape" aria-hidden="true">
+        <div class="tape-band"><div class="tape-track" id="tapeTrack"></div></div>
+        <div class="rb-badge"><svg class="oct" viewBox="0 0 100 100"><path d="M24 2h52l22 22v52L76 98H24L2 76V24z" /><path class="in" d="M27 9h46l18 18v46L73 91H27L9 73V27z" /></svg><svg class="logo-mk"><use href="#mark" /></svg></div>
+      </div>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="sec" id="about">
+        <div class="wrap about-grid">
+          <div class="t-card" data-reveal>
+            <span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span>
+            <div class="t-orbit">
+              <div class="ring r1"></div>
+              <div class="ring r2"></div>
+              <svg class="t-logo"><use href="#mark" /></svg>
+              <span class="fchip mono f1">F = ma</span>
+              <span class="fchip mono f2">v = fλ</span>
+              <span class="fchip mono f3">E = hf</span>
+              <i class="electron e1"></i><i class="electron e2"></i>
+            </div>
+            <div class="t-id glass">
+              <div><strong data-cfg="teacher.name"></strong><span>Physics · O & A Level</span></div>
+              <span class="mono t-city">KHI</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow" data-sec="01" data-reveal>Meet your teacher</span>
+            <h2 data-reveal>A physicist who teaches the <span class="hl">why</span> before the formula.</h2>
+            <p data-reveal><span data-cfg="teacher.name"></span> holds an MSc and a BS (Hons) in Applied Physics from the University of Karachi, and has taught O & A Level Physics for over 12 years. Physics Venture is the result: the world of physics, explored one concept at a time.</p>
+            <p data-reveal>Physics gets easy the moment every equation becomes a picture: a force diagram, a field line, an energy transfer. Every lesson starts there, then the maths, then the exam answer.</p>
+            <p data-reveal>Lessons follow how Cambridge actually sets questions. You learn the concept, the shortcut and the exact wording an examiner wants. You also drill the practical paper until tables, graphs and uncertainties come without thinking.</p>
+            <dl class="facts" data-reveal>
+              <div><dt class="mono">Education</dt><dd data-cfg="teacher.education"></dd></div>
+              <div><dt class="mono">Experience</dt><dd><span data-cfg="teacher.years"></span>+ years teaching O & A Level Physics</dd></div>
+              <div><dt class="mono">Currently</dt><dd data-cfg="teacher.currently"></dd></div>
+              <div><dt class="mono">Practicals</dt><dd>Free exam-style practicals, built in</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="wrap stats" id="stats"></div>
+      </section>
+
+      <!-- ============ COURSES ============ -->
+      <section class="sec" id="courses">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="02" data-reveal>Courses</span>
+            <h2 data-reveal>Three syllabuses. One clear way of thinking.</h2>
+            <p data-reveal>Every course covers the full Cambridge syllabus, with past-paper and practical-paper drills built in from week one.</p>
+          </div>
+          <div class="courses">
+            <article class="course card" data-reveal>
+              <div class="c-art">
+                <svg viewBox="0 0 300 150" class="art-vt" aria-hidden="true">
+                  <text x="150" y="20" text-anchor="middle" class="art-label">area under v–t = distance</text>
+                  <path class="area" d="M40 130 L110 60 L200 60 L260 130 Z" />
+                  <path class="axis" d="M40 136V30M40 130h240" />
+                  <path class="curve" d="M40 130 L110 60 L200 60 L260 130" />
+                  <text x="34" y="36" text-anchor="end" class="art-label small">v</text>
+                  <text x="280" y="144" text-anchor="end" class="art-label small">t</text>
+                </svg>
+              </div>
+              <div class="c-meta mono"><span>Cambridge O Level</span><b>5054</b></div>
+              <h3>Physics</h3>
+              <p>Motion, forces and energy, thermal physics, waves, light and sound, electricity and magnetism, and nuclear physics, plus space physics in the new syllabus.</p>
+              <ul>
+                <li>Paper 1 MCQ speed and accuracy drills</li>
+                <li>Paper 2 structured theory, topic by topic</li>
+                <li>Paper 3 practical and Paper 4 ATP skills in the practicals</li>
+              </ul>
+              <a class="c-link" href="#contact">Ask about O Level batches <svg width="16" height="16"><use href="#i-arrow" /></svg></a>
+            </article>
+            <article class="course card" data-reveal>
+              <div class="c-art">
+                <svg viewBox="0 0 300 150" class="art-circuit" aria-hidden="true">
+                  <text x="150" y="20" text-anchor="middle" class="art-label">series circuit · V = IR</text>
+                  <path class="wire" d="M60 50H240V125H60Z" />
+                  <path class="cell" d="M140 40v20M152 44v12" />
+                  <rect class="res" x="215" y="76" width="50" height="16" transform="rotate(90 240 84)" />
+                  <circle class="meter" cx="60" cy="88" r="13" /><text x="60" y="92" text-anchor="middle" class="art-label">A</text>
+                  <g class="charges"><circle r="3" /><circle r="3" /><circle r="3" /><circle r="3" /><circle r="3" /><circle r="3" /></g>
+                </svg>
+              </div>
+              <div class="c-meta mono"><span>Cambridge IGCSE</span><b>0625</b></div>
+              <h3>Physics</h3>
+              <p>Core and Extended, with a heavy focus on calculations, circuit reasoning, and the Paper 6 alternative-to-practical that decides so many A*s.</p>
+              <ul>
+                <li>Every equation drilled in repeatable patterns</li>
+                <li>Circuits, waves and forces drawn until they make sense</li>
+                <li>Paper 6 ATP: tables, graphs and evaluation</li>
+              </ul>
+              <a class="c-link" href="#contact">Ask about IGCSE batches <svg width="16" height="16"><use href="#i-arrow" /></svg></a>
+            </article>
+            <article class="course card" data-reveal>
+              <div class="c-art">
+                <svg viewBox="0 0 300 150" class="art-wave" aria-hidden="true">
+                  <text x="150" y="20" text-anchor="middle" class="art-label">stationary wave · nodes and antinodes</text>
+                  <path class="axis" d="M30 85h250" />
+                  <path class="sw sw1" d="" /><path class="sw sw2" d="" />
+                  <g class="nodes"></g>
+                </svg>
+              </div>
+              <div class="c-meta mono"><span>Cambridge AS & A Level</span><b>9702</b></div>
+              <h3>Physics</h3>
+              <p>AS and A2 in full: kinematics and dynamics, waves and superposition, electricity, fields, oscillations, thermodynamics, quantum and nuclear physics, and astronomy.</p>
+              <ul>
+                <li>Derivations understood, not memorised</li>
+                <li>Paper 3 and Paper 5 practical planning and analysis</li>
+                <li>Variant-by-variant paper practice in the final term</li>
+              </ul>
+              <a class="c-link" href="#contact">Ask about A Level batches <svg width="16" height="16"><use href="#i-arrow" /></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ METHOD ============ -->
+      <section class="sec method" id="method">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="03" data-reveal>The approach</span>
+            <h2 data-reveal>How a chapter goes from confusing to conquered.</h2>
+          </div>
+          <div class="stack">
+            <article class="step card"><span class="num">01</span><div><h3>Draw it first</h3><p>Every topic starts with a diagram: free-body forces, field lines, ray paths, energy flows. If you can draw it, you can solve it.</p><code class="mono">Why does a falling ball reach terminal velocity? → drag grows until W = D</code></div></article>
+            <article class="step card"><span class="num">02</span><div><h3>Measure it in a practical</h3><p>Before the theory sets, you take real-feeling readings: time 20 swings, read the meter, plot the graph and get the gradient the mark scheme wants.</p><code class="mono">T² = (4π²/g) l → gradient = 4π²/g → g = 9.8 m s⁻²</code></div></article>
+            <article class="step card"><span class="num">03</span><div><h3>Drill with real papers</h3><p>Practice comes straight from past papers, topic by topic first, then full timed papers as the exam gets close.</p><code class="mono">9702/22 · 9702/33 · 5054/22 → timed, marked, reviewed</code></div></article>
+            <article class="step card"><span class="num">04</span><div><h3>Write like the examiner</h3><p>Mark schemes and examiner reports show the exact wording that earns marks. You learn to write answers that collect every one.</p><code class="mono">"resultant force is zero" not "forces cancel" · units on every heading</code></div></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRACTICALS TEASER ============ -->
+      <section class="sec" id="practicals">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="04" data-reveal>Physics Practicals</span>
+            <h2 data-reveal>The practical paper, rehearsed until it's easy.</h2>
+            <p data-reveal>Take readings with real instrument error, fill a results table, plot the graph, draw the gradient triangle and evaluate. Each step is marked the way Cambridge marks it. Free, with no sign-up.</p>
+          </div>
+          <div class="lab-grid">
+            <a class="lab-tile card" href="practicals.html#pendulum" data-reveal>
+              <div class="lt-art"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M20 8h80" class="line-l" /><path d="M60 8v70" class="dim" /><g class="swing"><path d="M60 8v62" class="line-l" /><circle cx="60" cy="74" r="7" class="bob" /></g><path d="M34 70a40 40 0 0 0 52 0" class="dim" /></svg></div>
+              <span class="mono lt-n">01</span><h3>Simple pendulum</h3><p>Time oscillations, plot T² against l and find g from the gradient, with its uncertainty.</p>
+            </a>
+            <a class="lab-tile card" href="practicals.html#spring" data-reveal>
+              <div class="lt-art"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M30 8h60" class="line-l" /><path class="spring" d="M60 8v8l-10 4 20 6-20 6 20 6-20 6 20 6-10 4v6" /><rect x="50" y="66" width="20" height="18" class="mass" /><path d="M92 16v66M88 16h8M88 82h8" class="dim" /></svg></div>
+              <span class="mono lt-n">02</span><h3>Hooke's law</h3><p>Load a spring, read the extension against a metre rule and find the spring constant.</p>
+            </a>
+            <a class="lab-tile card" href="practicals.html#refraction" data-reveal>
+              <div class="lt-art"><svg viewBox="0 0 120 100" aria-hidden="true"><rect x="30" y="34" width="60" height="32" class="glass-b" /><path d="M14 10l30 24" class="ray" /><path d="M44 34l20 32" class="ray" /><path d="M64 66l30 24" class="ray" /><path d="M44 18v34" class="dim" /></svg></div>
+              <span class="mono lt-n">03</span><h3>Refraction</h3><p>Trace rays with pins through a glass block, measure i and r, and find the refractive index.</p>
+            </a>
+            <a class="lab-tile card" href="practicals.html#iv" data-reveal>
+              <div class="lt-art"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M16 86h92M20 90V10" class="line-l" /><path d="M20 86L100 18" class="dim" /><path class="ivc" d="M20 86C50 60 70 30 100 22" /></svg></div>
+              <span class="mono lt-n">04</span><h3>I–V characteristics</h3><p>Vary the p.d., read the ammeter and voltmeter, and compare a resistor with a filament lamp.</p>
+            </a>
+          </div>
+          <div class="lab-cta" data-reveal><a class="btn btn-primary" href="practicals.html">Open the Physics Practicals <span class="arr"><svg width="18" height="18"><use href="#i-arrow" /></svg></span></a></div>
+        </div>
+      </section>
+
+      <!-- ============ TOOLS ============ -->
+      <section class="sec" id="tools">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="05" data-reveal>Physics Tools</span>
+            <h2 data-reveal>Check your working in seconds.</h2>
+            <p data-reveal>SUVAT, circuits, uncertainties and units, worked step by step so you can see where the marks are.</p>
+          </div>
+          <div class="tools card" data-reveal>
+            <div class="tool-tabs" role="tablist">
+              <button role="tab" aria-selected="true" data-tool="suvat">SUVAT solver</button>
+              <button role="tab" aria-selected="false" data-tool="res">Resistors</button>
+              <button role="tab" aria-selected="false" data-tool="unc">Uncertainty</button>
+              <button role="tab" aria-selected="false" data-tool="unit">Units &amp; prefixes</button>
+            </div>
+            <div class="tool-panel" data-panel="suvat">
+              <p class="tool-hint">Fill in any three. Leave the other two blank.</p>
+              <div class="row5">
+                <label class="fld"><span class="mono">s / m</span><input id="sS" type="number" step="any" placeholder="?" /></label>
+                <label class="fld"><span class="mono">u / m s⁻¹</span><input id="sU" type="number" step="any" value="0" /></label>
+                <label class="fld"><span class="mono">v / m s⁻¹</span><input id="sV" type="number" step="any" placeholder="?" /></label>
+                <label class="fld"><span class="mono">a / m s⁻²</span><input id="sA" type="number" step="any" value="9.81" /></label>
+                <label class="fld"><span class="mono">t / s</span><input id="sT" type="number" step="any" value="2.0" /></label>
+              </div>
+              <div class="tool-out" id="suvatOut"></div>
+            </div>
+            <div class="tool-panel" data-panel="res" hidden>
+              <div class="row3">
+                <label class="fld"><span class="mono">Resistors / Ω (comma-separated)</span><input id="rList" value="10, 20, 30" autocomplete="off" spellcheck="false" /></label>
+                <label class="fld"><span class="mono">Supply e.m.f. / V (for the divider)</span><input id="rV" type="number" step="any" value="12" /></label>
+              </div>
+              <div class="quick mono" data-quick="rList"><button>10, 20, 30</button><button>100, 100</button><button>4.7, 2.2, 1.0</button><button>1000, 220</button></div>
+              <div class="tool-out" id="resOut"></div>
+            </div>
+            <div class="tool-panel" data-panel="unc" hidden>
+              <p class="tool-hint">Combine measurements: Q = k · A<sup>p</sup> · B<sup>q</sup>. Use p, q = −1 to divide.</p>
+              <div class="row-unc">
+                <label class="fld"><span class="mono">A</span><input id="uA" type="number" step="any" value="0.800" /></label>
+                <label class="fld"><span class="mono">± ΔA</span><input id="udA" type="number" step="any" value="0.002" /></label>
+                <label class="fld"><span class="mono">power p</span><input id="upA" type="number" step="any" value="1" /></label>
+                <label class="fld"><span class="mono">B</span><input id="uB" type="number" step="any" value="1.79" /></label>
+                <label class="fld"><span class="mono">± ΔB</span><input id="udB" type="number" step="any" value="0.02" /></label>
+                <label class="fld"><span class="mono">power q</span><input id="upB" type="number" step="any" value="-2" /></label>
+                <label class="fld"><span class="mono">constant k</span><input id="uK" type="number" step="any" value="39.478" /></label>
+              </div>
+              <div class="quick mono" id="uncQuick"><button data-set="0.800,0.002,1,1.79,0.02,-2,39.478">g = 4π² l / T²</button><button data-set="2.40,0.05,1,0.150,0.005,-1,1">R = V / I</button><button data-set="0.0234,0.0001,1,0.00450,0.00005,-1,1">ρ = m / V</button></div>
+              <div class="tool-out" id="uncOut"></div>
+            </div>
+            <div class="tool-panel" data-panel="unit" hidden>
+              <div class="row3">
+                <label class="fld"><span class="mono">Value</span><input id="cVal" type="number" step="any" value="2.5" /></label>
+                <label class="fld"><span class="mono">From</span><select id="cFrom"></select></label>
+                <label class="fld"><span class="mono">To</span><select id="cTo"></select></label>
+              </div>
+              <div class="quick mono" id="unitQuick"><button data-u="energy">Energy</button><button data-u="length">Length</button><button data-u="current">Current</button><button data-u="time">Time</button><button data-u="pressure">Pressure</button><button data-u="mass">Mass</button></div>
+              <div class="tool-out" id="unitOut"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PAPER VAULT ============ -->
+      <section class="sec" id="vault">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="06" data-reveal>Paper Vault</span>
+            <h2 data-reveal>Every paper, mark scheme and examiner report.</h2>
+            <p data-reveal>Pick a syllabus, year and session. Each question paper sits next to its mark scheme, with the examiner report and grade thresholds one tap away.</p>
+          </div>
+          <div class="vault card" data-reveal>
+            <div class="v-controls">
+              <div class="v-group"><span class="mono">Syllabus</span><div class="seg" id="vSyl"></div></div>
+              <div class="v-group"><span class="mono">Year</span><select id="vYear"></select></div>
+              <div class="v-group"><span class="mono">Session</span><div class="seg" id="vSes"></div></div>
+            </div>
+            <div class="v-extra" id="vExtra"></div>
+            <div class="v-papers" id="vPapers"></div>
+            <p class="v-note">Files open from PapaCambridge's public archive of Cambridge (CAIE) papers. Not every variant is published for every session. © UCLES, Cambridge University Press &amp; Assessment.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHERE ============ -->
+      <section class="sec" id="where">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="07" data-reveal>In the classroom</span>
+            <h2 data-reveal>Where students learn with him.</h2>
+          </div>
+          <div class="colleges" id="colleges"></div>
+        </div>
+      </section>
+
+      <!-- ============ YOUTUBE ============ -->
+      <section class="sec yt-sec" id="youtube">
+        <div class="wrap">
+          <div class="yt card" data-reveal>
+            <div class="yt-copy">
+              <span class="eyebrow">Physics Venture on YouTube &amp; Instagram</span>
+              <h2>Join the adventure, one concept at a time.</h2>
+              <p>Physics Venture explores the world of physics one concept at a time: short explanations, worked problems and exam tips, so a missed class or a late-night doubt never has to wait.</p>
+              <div class="yt-stats"><div><b data-cfg="contact.handle"></b><span>on YouTube &amp; Instagram</span></div><div><b>O &amp; A</b><span>Level Physics</span></div></div>
+              <div class="yt-btns">
+                <a class="btn btn-primary" data-href="yt" target="_blank" rel="noopener">Watch on YouTube <span class="arr"><svg width="18" height="18"><use href="#i-yt" /></svg></span></a>
+                <a class="btn" data-href="ig" target="_blank" rel="noopener">Follow on Instagram <span class="arr"><svg width="18" height="18"><use href="#i-ig" /></svg></span></a>
+              </div>
+            </div>
+            <div class="yt-art" aria-hidden="true">
+              <span class="mono fl f1">s = ut + ½at²</span>
+              <span class="mono fl f2">F = BIL sin θ</span>
+              <span class="mono fl f3">λ = h / p</span>
+              <div class="play"><svg width="34" height="34"><use href="#i-yt" /></svg></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="sec" id="faq">
+        <div class="wrap faq-wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-sec="08" data-reveal>Questions</span>
+            <h2 data-reveal>Before you message.</h2>
+          </div>
+          <div class="faq" data-reveal>
+            <details><summary>Which syllabuses are taught?</summary><p>Cambridge O Level Physics (5054), IGCSE Physics (0625) and AS &amp; A Level Physics (9702), including the practical papers: 5054 Papers 3 and 4, 0625 Papers 5 and 6, and 9702 Papers 3 and 5.</p></details>
+            <details><summary>How do I join a class?</summary><p>Press <a href="join.html">Join a class</a> to create your account and choose your course. You can also fill in the form below or send a WhatsApp message with your level and syllabus. Current batch timings, venues and fees are shared there.</p></details>
+            <details><summary>Are the Physics Practicals free?</summary><p>Yes. The practicals, the physics tools and the Paper Vault are all free to use, with no sign-up. Everything runs in your browser.</p></details>
+            <details><summary>Can the online practicals replace real lab work?</summary><p>No, but they make it far easier. The marks in a practical paper come from how you record, plot and analyse readings, and that is exactly what you drill here. In the real lab you then know what to measure and how to write it down.</p></details>
+            <details><summary>What's the difference between a mark scheme and an examiner report?</summary><p>A mark scheme lists the answers and where each mark is given. An examiner report explains how candidates actually performed and the mistakes that cost the most marks. Read both after every paper.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="sec" id="contact">
+        <div class="wrap contact-grid">
+          <div>
+            <div class="sec-head">
+              <span class="eyebrow" data-sec="09" data-reveal>Admissions</span>
+              <h2 data-reveal>Your next grade starts with one message.</h2>
+              <p data-reveal>Tell us who you are and what you're preparing for. The form opens WhatsApp with everything filled in, so your request reaches the teacher directly.</p>
+            </div>
+            <ul class="c-info" data-reveal>
+              <li><span class="mono">WhatsApp</span><a data-href="wa" target="_blank" rel="noopener" data-cfg="contact.whatsappDisplay"></a></li>
+              <li><span class="mono">Call</span><a data-href="tel" data-cfg="contact.phone"></a></li>
+              <li><span class="mono">YouTube</span><a data-href="yt" target="_blank" rel="noopener" data-cfg="contact.handle"></a></li>
+              <li><span class="mono">Instagram</span><a data-href="ig" target="_blank" rel="noopener" data-cfg="contact.handle"></a></li>
+              <li><span class="mono">City</span><span><span data-cfg="teacher.city"></span> · venues shared on WhatsApp</span></li>
+            </ul>
+          </div>
+          <form class="cform card" id="cform" novalidate data-reveal>
+            <label class="fld"><span class="mono">Student's full name *</span><input name="name" required minlength="3" autocomplete="name" /></label>
+            <label class="fld"><span class="mono">WhatsApp number *</span><input name="phone" required inputmode="tel" pattern="^(\+92|0)3\d{2}[\s-]?\d{7}$" placeholder="03XX XXXXXXX" autocomplete="tel" /></label>
+            <div class="fld"><span class="mono">I am the *</span><div class="seg" role="radiogroup"><label><input type="radio" name="who" value="Student" checked /><span>Student</span></label><label><input type="radio" name="who" value="Parent" /><span>Parent</span></label></div></div>
+            <label class="fld"><span class="mono">Course *</span><select name="course" required><option value="">Choose a syllabus</option><option>O Level Physics (5054)</option><option>IGCSE Physics (0625)</option><option>AS Level Physics (9702)</option><option>A Level Physics (9702)</option></select></label>
+            <label class="fld"><span class="mono">Exam session *</span><select name="session" required><option value="">When is the exam?</option><option>May / June 2027</option><option>Oct / Nov 2027</option><option>May / June 2028</option><option>Not decided yet</option></select></label>
+            <label class="fld full"><span class="mono">What do you need help with? *</span><textarea name="msg" rows="4" required minlength="15" maxlength="500"></textarea><small class="mono cnt" id="msgCnt">0 / 500</small></label>
+            <p class="form-err" id="formErr" role="alert"></p>
+            <button class="btn btn-primary full" type="submit">Send on WhatsApp <span class="arr"><svg width="18" height="18"><use href="#i-wa" /></svg></span></button>
+            <small class="mono form-note full">Fields marked * are required. Nothing is stored on this site.</small>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="cta">
+        <div class="wrap">
+          <div class="cta-box" data-reveal>
+            <h2>Turn your next paper into your best paper.</h2>
+            <p>Message with your level and syllabus, and you'll be pointed to the right batch.</p>
+            <div class="cta-btns">
+              <a class="btn btn-primary" data-href="wa" target="_blank" rel="noopener">WhatsApp <span class="arr"><svg width="18" height="18"><use href="#i-wa" /></svg></span></a>
+              <a class="btn" data-href="tel">Call now <span class="arr"><svg width="18" height="18"><use href="#i-phone" /></svg></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ APP ============ -->
+      <section class="sec" id="app">
+        <div class="wrap app-box card" data-reveal>
+          <div>
+            <span class="eyebrow">Get the app</span>
+            <h2>The practicals, on your home screen.</h2>
+            <p>Install it on your phone or laptop. It opens full screen, and the practicals and tools work offline.</p>
+            <button class="btn btn-primary" id="installBtn" type="button">Install app <span class="arr"><svg width="18" height="18"><use href="#i-arrow" /></svg></span></button>
+            <small class="mono install-hint" id="installHint"></small>
+          </div>
+          <svg class="app-mk" aria-hidden="true"><use href="#mark" /></svg>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot-in">
+        <a href="#top" class="brand"><svg class="logo-mk"><use href="#mark" /></svg><span class="brand-name"><span data-cfg="teacher.shortName"></span><small data-cfg="teacher.brand"></small></span></a>
+        <nav><a data-href="yt" target="_blank" rel="noopener">YouTube</a><a data-href="ig" target="_blank" rel="noopener">Instagram</a><a href="#courses">Courses</a><a href="practicals.html">Physics Practicals</a><a href="#vault">Paper Vault</a><a href="#contact">Contact</a></nav>
+        <small class="mono">© <span id="yr"></span> <span data-cfg="teacher.name"></span>. Cambridge papers © UCLES.</small>
+      </div>
+    </footer>
+
+    <a class="fab" data-href="wa" target="_blank" rel="noopener" aria-label="Message on WhatsApp"><svg width="24" height="24"><use href="#i-wa" /></svg></a>
+
+  </body>
+</html>
